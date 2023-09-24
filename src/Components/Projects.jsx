@@ -7,7 +7,7 @@ import DesignTop from './DesignTop';
 import { useThemeCTX } from '../Context'
 import crm from '../assets/images/crm.jpg';
 import aws from '../assets/images/aws.jpg';
-import ai from '../assets/images/imgai3.jpg';
+import ai from '../assets/images/imggen.jpg';
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
