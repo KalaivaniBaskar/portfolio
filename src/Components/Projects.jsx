@@ -7,6 +7,7 @@ import DesignTop from './DesignTop';
 import { useThemeCTX } from '../Context'
 import crm from '../assets/images/crm.jpg';
 import aws from '../assets/images/aws.jpg';
+import ai from '../assets/images/imgai3.jpg';
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
@@ -24,13 +25,40 @@ const Projects = () => {
       "image" : crm
     },
     {
-      "title" : "Serverless CRUD app using AWS",
+      "title" : "Serverless App w AWS",
       "stack" : "React.js, AWS - S3, Lambda, DynamoDB",
-      "func" : "Deploy Frontend on S3, Create backend using Lambda, API gateway and DynamoDB",
+      "func" : "A CRUD app with frontend on S3, backend using Lambda, API gateway and DynamoDB",
       "site" : "http://kalais-aws-crud-app.s3-website-us-east-1.amazonaws.com/",
       "fe": "https://github.com/KalaivaniBaskar/AWS-CRUD-Serverless",
       "be" : "https://github.com/KalaivaniBaskar/AWS-CRUD-Serverless/tree/master/aws",
       "image" : aws
+    },
+    {
+      "title" : "Image generator ",
+      "stack" : "HTML,CSS, Javascript",
+      "func" : "A text to image generator application using OpenAI platform",
+      "site" : "https://txt-image-generator-openai.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-fe",
+      "be" : "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-BE",
+      "image" : ai
+    },
+    {
+      "title" : "Image generator ",
+      "stack" : "HTML,CSS, Javascript",
+      "func" : "A text to image generator application using OpenAI API",
+      "site" : "https://txt-image-generator-openai.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-fe",
+      "be" : "",
+      "image" : ai
+    },
+    {
+      "title" : "Image generator ",
+      "stack" : "HTML,CSS, Javascript",
+      "func" : "A text to image generator application using OpenAI API",
+      "site" : "https://txt-image-generator-openai.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-fe",
+      "be" : "",
+      "image" : ai
     },
   ]
   return (
@@ -51,6 +79,7 @@ const Projects = () => {
     <DesignOne />
     <DesignTop />
     </section>
+
     <section className={`grid-project-sm ${theme} ${coltheme}`}>
        <div>
          <p className={`title-hd ${colSwitch}`}>

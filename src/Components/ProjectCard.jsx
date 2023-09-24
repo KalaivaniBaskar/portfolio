@@ -14,12 +14,14 @@ export default function ProjectCard({project, idx}) {
   const effect = ((idx + 1) %2 === 0) ? `animate__slideInRight` : `animate__slideInLeft`;
   
   return (
-    <Card sx={{ maxWidth: 345, justifySelf: 'center' }} elevation={16} 
+    <Card sx={{ maxWidth: 345, justifySelf: 'center', borderLeft: '1px solid grey', 
+    borderRight: '1px solid grey'}} elevation={16} 
            className={`${theme} animate__animated ${effect}` }  >
       <CardActionArea>
         <CardMedia
           component="img"
           height="180"
+          width='320'
           image= {image}
           alt={title}
           sx={{objectFit: 'cover'}}
@@ -40,9 +42,9 @@ export default function ProjectCard({project, idx}) {
         <a href={fe} target='_blank' rel="noreferrer"> <Button size="small" color="primary">
           Frontend
         </Button> </a>
-        <a href={be} target='_blank' rel="noreferrer"> <Button size="small" color="primary">
+        { be && <a href={be} target='_blank' rel="noreferrer"> <Button size="small" color="primary">
           Backend
-        </Button>  </a>
+        </Button>  </a> }
         <a href={site} target='_blank' rel="noreferrer"><Button size="small" color="primary">
           Live Site
         </Button> </a>
