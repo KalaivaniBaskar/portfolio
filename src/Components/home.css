@@ -1,0 +1,270 @@
+/* for Home page */
+.grid-home{
+    display: grid;
+    height: 100vh;
+    max-height: 100vh;
+    grid-template-columns: 1fr 7.5fr 3.5fr;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 120px;
+    overflow-y: scroll;
+  }
+  
+  .home-container{
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 1.8fr 0.2fr; 
+    gap: 10px;
+    z-index: 50; 
+    align-items: center;  
+  }
+  
+  .img-container > img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  } 
+  
+  .bpad{
+    padding-block: 40px;
+  } 
+
+/* Home for lg screens */
+@media  screen and (max-height: 799px) and (min-width:900px){
+    .home-intro-lg{
+      font-size: 3.5rem;
+      font-family: 'Bethanya';
+      text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+    }
+    .home-intro-lg:hover{
+      animation: bounce;
+      animation-duration: 1s;
+    }
+    .home-desc{
+      font-family: 'PopL';
+      font-size: 1.5rem;
+    }
+    .intro{
+      font-family: 'PopR';
+      font-size: 1rem;
+      padding-left: 10%;
+      text-align: center;
+    }
+    .div-c{
+      margin: 20px 10px;
+    }
+    .mern {
+      height: 100px;
+      width: 100px; 
+      animation: heartBeat;
+      animation-duration: 2s;
+      animation-delay : 2s;
+      animation-iteration-count: 2;
+    }
+    .img-container{
+      height: 70%; 
+      width: 100%;
+      object-fit :cover; 
+      padding: 5px; 
+      background: rgb(42,62,177);
+      background: linear-gradient(113deg, rgba(42,62,177,1) 18%, rgba(255,107,53,1) 100%);
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 8px #0000004d;
+      z-index: 100;
+    }
+    .home-container{
+      min-height: 100%;
+      min-width: 100%;
+      display: grid;
+      grid-template-rows: 1fr; 
+      gap: 10px;
+      z-index: 50; 
+    }
+    .btnwrap > button {
+      padding: 10px;
+      margin-top: 40px;
+      font-family: 'PopR';
+      font-size: 1rem;
+      font-weight: 550;
+      border-radius: 25px;
+      background: rgb(42,62,177);
+      background: linear-gradient(270deg, rgb(73, 93, 207) 15%, rgba(255,107,53,1) 100%);
+      animation: bounce;
+      animation-delay: 6s;
+      animation-duration: 1s;
+    }
+    .btnwrap > button:hover {
+      color: white ;
+      animation: pulse;
+      animation-duration: 1s;
+    }
+}
+
+@media  screen and (min-height: 800px) and (min-width:900px){
+    .mern {
+      height: 200px;
+      width: 200px; 
+     
+    }
+    .div-c{
+      margin: 30px 10px;
+    }
+    
+    .home-intro-lg{
+      font-size: 6rem;
+      font-family: 'Bethanya';
+      text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+    }
+    .home-intro-lg:hover{
+      animation: bounce;
+      animation-duration: 1s;
+    }
+    .home-desc{
+      font-family: 'PopL';
+      font-size: 2.5rem;
+    }
+    .intro{
+      font-family: 'PopR';
+      font-size: 1.5rem;
+      padding-left: 16%;
+      text-align: center;
+    }
+    .img-container{
+      height: 80%; 
+      width: 100%;
+      object-fit: cover; 
+      padding: 5px; 
+      background: rgb(42,62,177);
+      background: linear-gradient(113deg, rgba(42,62,177,1) 18%, rgba(255,107,53,1) 100%);
+      max-width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 0 8px #0000004d;
+      z-index: 100;
+    }
+    .btnwrap > button {
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 1.2rem;
+      font-weight: 550;
+      border-radius: 25px;
+    }
+}
+
+@media  screen and (min-width: 900px){
+      .grid-home-sm{
+       display: none;
+      }
+}
+
+@media  screen and (max-width: 899px){
+        .grid-home-sm{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        overflow-y: scroll; 
+        min-width: 250px;
+        }
+        .img-container,.grid-home  {
+          display: none;
+        }
+        .bpad{
+          padding-block-start: 40px;
+          padding-block-end: 80px;
+        }
+      
+        .img-container-sm{
+          width: 270px;
+          height: 270px;
+          border-radius: 50%;
+          padding: 1px;
+          background: rgb(42,62,177);
+          background: linear-gradient(113deg, rgba(42,62,177,1) 18%, rgba(255,107,53,1) 100%);
+          box-shadow: 0 0 8px #0000004d;
+          z-index: 100;
+          object-fit: cover; 
+          max-width: 100%;
+          justify-self: center;
+        }
+        .mern {
+          height: 150px;
+          width: 150px; 
+          
+        }
+        .div-c{
+          margin: 10px 10px;
+        }
+        
+        .home-intro-sm{
+          font-size: 4rem;
+          font-family: 'Bethanya';
+          text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+        }
+        .home-intro-sm:hover{
+          animation: bounce;
+          animation-duration: 1s;
+        }
+        .home-desc{
+          font-family: 'PopL';
+          font-size: 2rem;
+        }
+        .btnwrap > button {
+          padding: 15px;
+          font-size: 1rem;
+          font-weight: 550;
+          border-radius: 25px;
+        
+        }
+} 
+
+@media  screen and (max-width: 499px){
+        .img-container-sm{
+          width: 200px;
+          height: 200px;
+          border-radius: 5%;
+          padding: 1px;
+          background: rgb(42,62,177);
+          background: linear-gradient(113deg, rgba(42,62,177,1) 18%, rgba(255,107,53,1) 100%);
+          box-shadow: 0 0 8px #0000004d;
+          z-index: 100;
+          object-fit: contain; 
+          max-width: 100%;
+          justify-self: center;
+          
+        }
+        .mern {
+          height: 90px;
+          width: 90px; 
+        }
+        .div-c{
+          margin: 10px 10px;
+        }
+        
+        .home-intro-sm{
+          font-size: 3.5rem;
+          font-family: 'Bethanya';
+          text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+        }
+        .home-intro-sm:hover{
+          animation: bounce;
+          animation-duration: 1s;
+        }
+        .home-desc{
+          font-family: 'PopL';
+          font-size: 1.5rem;
+        }
+        
+        .btnwrap > button {
+          padding: 10px;
+          margin-top: 20px;
+          font-size: 0.8rem;
+          font-weight: 550;
+          border-radius: 25px;
+          
+        }
+} 

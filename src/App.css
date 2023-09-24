@@ -1,38 +1,347 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@font-face {
+  font-family: "Bethanya";
+  src: local("Bethanya"), 
+        url("./fonts/BethanyaRegular-4Bw5W.ttf")
+        format("truetype");
+} 
+@font-face {
+  font-family: "PopL";
+  src: local("PopL"), 
+        url("./fonts/Poppins-Light.ttf")
+        format("truetype");
+} 
+@font-face {
+  font-family: "PopR";
+  src: local("PopR"), 
+        url("./fonts/Poppins-Regular.ttf")
+        format("truetype");
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.font-beth{
+  font-family: "Bethanya";
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dark{
+    background-color: #121212;
+    color: white;
+}
+.light{
+    background-color: rgb(253, 253, 253);
+    color: rgb(41, 40, 40);
+}
+.duo{
+  color: white;
+  background: rgb(42,62,177);
+  background: linear-gradient(270deg, rgb(73, 93, 207) 15%, rgba(255,107,53,1) 90%);
+}
+.palette{
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}
+.nav-buttons{
+  height: 100%;
+  position: fixed;
+  right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  z-index: 100;
+}
+.nav-buttons-small{
+  position: fixed;
+  right: 20px;
+  top : 20px;
+  z-index: 100;
+}
+.nav-buttons > ul > li > a > button {
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.nav-buttons > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 100;
+}
+.nav-buttons > ul > li {
+  margin-bottom: 0.5rem;;
 }
 
-.App-link {
-  color: #61dafb;
+.active > button{
+  background-color: #efa00b !important
+}
+.active > button > svg{
+  background-color: #efa00b !important
 }
 
-@keyframes App-logo-spin {
+.nav-theme{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 200;
+  transform: translate(0, 50%);
+} 
+.nav-theme > div {
+  background-color: white; 
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+@media  screen and (max-width: 899px){
+  .nav-theme {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 20px;
+    top : 20px;
+    transform: translate(0, 70%);
+  }
+  .nav-theme > div {
+    padding: 0.1rem;
+    border: 0.5px solid grey;
+  }
+}
+.vertical-timeline-element-date{
+  color: blueviolet;
+  font-size: 1rem !important;
+  text-shadow: 0 1px 1px yellow;
+}
+
+.left-design{
+  width: 100%;
+  height: 30px;
+} 
+.red-bg{
+  background-color: red;
+}
+.orange-bg{
+  background-color: orange;
+}
+.yellow-bg{
+  background-color: #CEFA05;
+}
+.blue-bg{
+  background-color: blue;
+}
+.violet-bg{
+  background-color: blueviolet;
+}
+.red{
+  color: red ;
+}
+.orange{
+  color: orange;
+}
+.yellow{
+  color:#CEFA05;
+}
+.blue{
+ color: rgb(23, 23, 245);
+}
+.violet{
+ color: blueviolet;
+}
+
+.tilt > div:nth-child(odd){
+  transform: scaleX(0.85);
+}
+.tilt > div:nth-child(even){
+  transform: rotateZ(-10deg) ;
+  animation-name: dance;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+@keyframes dance {
   from {
-    transform: rotate(0deg);
+    transform: rotateZ(20deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateZ(-20deg);
   }
 }
+.design{
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  top : 0;
+  left : 0;
+  z-index: 5;
+}
+.designtop{
+  position: fixed;
+  top : 0;
+  right : 0;
+  z-index: 5;
+}
+@media  screen and (max-width: 899px){
+  .design{
+       display: none;
+  }
+  .designtop{
+       display: none;
+  }
+}
+
+.one{
+  height: 45%;
+  width : 90%;
+  background-color: #ff6b35;
+  /* background-color: #ff3d00  ; */
+  border-top-right-radius: 25px;
+  transform: translateX(-60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-in-one{
+  width:13%;
+  height: 60%;
+  position: fixed;
+  right: 15%;
+  border-radius: 10px;
+}
+.two{
+  height: 50%;
+  width : 70%;
+  /* background-color: #4169e1; */
+  background-color: #2a3eb1;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.block-in{
+   height: 70%;
+   width : 70%;
+   padding: 10px;
+   gap: 10px;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(12, 1fr);
+   justify-content: center;
+   align-items: center;
+}
+.block-in-blue {
+  width: 70%;
+  height: 70%;
+  background-color: #2a3eb1 !important;
+  z-index: 7;
+}
+.block-in-orange {
+  width: 70%;
+  height: 70%;
+  background-color: #ff6b35 !important;
+  z-index: 7;
+}
+.three{
+  height: 100px;
+  width : 80px;
+  position: fixed;
+  right: 0;
+  background-color: #ff6b35;
+  transform: translateX(60px);
+}
+.four{
+  height: 20px;
+  width : 200px;
+  /* background-color: #4169e1; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2a3eb1;
+}
+/* for Education page */
+.grid-journey{
+  grid-template-columns: 2fr 10fr;
+  align-items: center;
+  height: 90%; 
+  display: grid;
+  gap: 30px;
+}
+@media  screen and (max-width: 899px){
+  .grid-journey{
+    grid-template-columns: 12fr;
+  }
+} 
+@media  screen and (min-width: 900px){
+  .bottom-nav{
+    display: none;
+  }
+} 
+
+.bp{
+  padding-block: 10px;
+}
+.journey{
+  overflow-y: scroll;
+  z-index : 10;
+} 
+
+/* common */
+.mern {
+   animation: heartBeat;
+  animation-duration: 2s;
+  animation-delay : 2s;
+  animation-iteration-count: 2;
+}
+/* common */
+.btnwrap > button {
+  background: rgb(42,62,177);
+  color: white;
+  background: rgb(42,62,177);
+  background: linear-gradient(270deg, rgb(73, 93, 207) 15%, rgba(255,107,53,1) 100%);
+  animation: bounce;
+  animation-delay: 6s;
+  animation-duration: 1s;
+  font-family: 'PopR';
+}
+.btnwrap > button:hover {
+  animation: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+/* common */
+.title-hd{
+  font-size: 2rem;
+  font-family: 'PopR';
+  margin-bottom: 20px;
+  text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+}
+
+
+@media  screen and (max-width: 499px){
+  .nav-buttons-small{
+    position: fixed;
+    right: 10px;
+  }
+}
+

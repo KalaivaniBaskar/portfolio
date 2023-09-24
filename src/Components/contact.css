@@ -1,0 +1,85 @@
+.grid-contact{
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    padding: 40px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 120px;
+}
+.grid-contact-sm{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px; 
+    overflow-x: auto;
+}
+ .info {
+    font-size: 1.2rem;
+ }
+ .mail-hd{
+    font-size: 1.2rem;
+    font-family: 'PopR';
+    text-shadow: 0 0 .1em  hsl(64, 61%, 66%);
+  }
+  .grid-contact>form{
+    z-index: 30;
+  }
+@media  screen and (min-width: 900px){
+    .grid-contact-sm {
+        display : none;
+    }
+    .form-wrap{
+        width: 600px;
+    }
+    
+}
+@media  screen and (max-width: 899px){
+    .grid-contact {
+        display : none;
+    }
+    .mail-hd{
+        font-size: 1rem;
+        word-break: 'break-all';
+    }
+    .info {
+    font-size: 1rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+ } 
+   .des{
+    display: none;
+   }
+}
+
+@media  screen and (max-width: 299px){
+    .grid-contact {
+        display: none;
+    }
+    .mail-hd{
+        font-size: 0.9rem;
+        word-break: 'break-all';
+    }
+    .info {
+    font-size: 0.8rem;
+ }
+ p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+}
