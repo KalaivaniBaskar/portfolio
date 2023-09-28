@@ -24,6 +24,7 @@ export default function ProjectCard({project, idx}) {
           width='320'
           image= {image}
           alt={title}
+          loading='lazy'
           sx={{objectFit: 'cover'}}
         />
         <CardContent>

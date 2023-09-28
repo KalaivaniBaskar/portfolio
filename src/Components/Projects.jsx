@@ -8,6 +8,7 @@ import { useThemeCTX } from '../Context'
 import crm from '../assets/images/crm.jpg';
 import aws from '../assets/images/aws.jpg';
 import ai from '../assets/images/imggen.jpg';
+import qr from '../assets/images/qr.png';
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
@@ -43,23 +44,15 @@ const Projects = () => {
       "image" : ai
     },
     {
-      "title" : "Image generator ",
-      "stack" : "HTML,CSS, Javascript",
-      "func" : "A text to image generator application using OpenAI API",
-      "site" : "https://txt-image-generator-openai.netlify.app/",
-      "fe": "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-fe",
+      "title" : "QR Code Creator/Scanner",
+      "stack" : "React, Javascript",
+      "func" : "A QR code generator and reader app built with QR server API upload and download",
+      "site" : "https://qrcode-gen-scanner.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/QR-code-App",
       "be" : "",
-      "image" : ai
+      "image" : qr
     },
-    {
-      "title" : "Image generator ",
-      "stack" : "HTML,CSS, Javascript",
-      "func" : "A text to image generator application using OpenAI API",
-      "site" : "https://txt-image-generator-openai.netlify.app/",
-      "fe": "https://github.com/KalaivaniBaskar/Image-Generator-OpenAI-fe",
-      "be" : "",
-      "image" : ai
-    },
+   
   ]
   return (
     <>
