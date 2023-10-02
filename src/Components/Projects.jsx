@@ -9,6 +9,7 @@ import crm from '../assets/images/crm.jpg';
 import aws from '../assets/images/aws.jpg';
 import ai from '../assets/images/imggen.jpg';
 import qr from '../assets/images/qr.png';
+import gabby from '../assets/images/gabby.png';
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
@@ -24,6 +25,15 @@ const Projects = () => {
       "fe": "https://github.com/KalaivaniBaskar/CRM-Capstone-frontend",
       "be" : "https://github.com/KalaivaniBaskar/CRM-Capstone-backend",
       "image" : crm
+    },
+    {
+      "title" : "Gabby Chat",
+      "stack" : "React.js, Socket.io, Node.js, MongoDB, Express.js",
+      "func" : "Authentication, Websockets",
+      "site" : "https://gabby-app.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/gabby-app-fe",
+      "be" : "https://github.com/KalaivaniBaskar/gabby-app-be",
+      "image" : gabby
     },
     {
       "title" : "Serverless App w AWS",
@@ -46,7 +56,7 @@ const Projects = () => {
     {
       "title" : "QR Code Creator/Scanner",
       "stack" : "React, Javascript",
-      "func" : "A QR code generator and reader app built with QR server API upload and download",
+      "func" : "A QR code generator and reader app built with QR server API ",
       "site" : "https://qrcode-gen-scanner.netlify.app/",
       "fe": "https://github.com/KalaivaniBaskar/QR-code-App",
       "be" : "",

@@ -9,7 +9,8 @@
     align-items: center;
     gap: 20px;
     padding-left: 40px;
-    padding-right: 120px;
+    padding-right: 120px; 
+    box-sizing: border-box;
 }
 .grid-contact-sm{
     display: grid;
