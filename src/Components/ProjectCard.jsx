@@ -20,8 +20,8 @@ export default function ProjectCard({project, idx}) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="180"
-          width='320'
+          height= '180px'
+          width='320px'
           image= {image}
           alt={title}
           loading='lazy'

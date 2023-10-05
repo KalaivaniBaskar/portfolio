@@ -8,8 +8,9 @@ import { useThemeCTX } from '../Context'
 import crm from '../assets/images/crm.jpg';
 import aws from '../assets/images/aws.jpg';
 import ai from '../assets/images/imggen.jpg';
-import qr from '../assets/images/qr.png';
+import qr from '../assets/images/qr2.png';
 import gabby from '../assets/images/gabby.png';
+import bookish from '../assets/images/bookish.png'
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
@@ -17,6 +18,15 @@ const Projects = () => {
   const {theme, colSwitch, coltheme } = useThemeCTX();
 
   const projects = [
+    {
+      "title" : "Bookish App",
+      "stack" : "React.js, Node.js, MongoDB, Express.js, Razorpay",
+      "func" : "Authentication, Role based permission, Payment Integration",
+      "site" : "https://crm-capstone-mern.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/CRM-Capstone-frontend",
+      "be" : "https://github.com/KalaivaniBaskar/CRM-Capstone-backend",
+      "image" : bookish
+    },
     {
       "title" : "CRM Application",
       "stack" : "React.js, Redux, Node.js, MongoDB, Express.js",
