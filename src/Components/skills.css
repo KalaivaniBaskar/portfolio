@@ -181,3 +181,6 @@
             height: 85px;
           }
      }
+     .btn-skills > a {
+      text-decoration: none;
+     }
