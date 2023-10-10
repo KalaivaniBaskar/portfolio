@@ -34,10 +34,12 @@ const Skills = () => {
               <div className='flex-div'>
                 <Button variant='outlined' className='btn-skills' onClick={()=> navigate('/education')}>Education</Button>
                 <Button variant='outlined' className='btn-skills' >
-                <a href='https://drive.google.com/file/d/1zlgsXu79LWff7J5PagLxCfXOBss2VHo0/view?usp=sharing' 
+                <a href='https://drive.google.com/file/d/1BF4YSupL1yCjomgxtoLQ5S5Y9-92RgbL/view?usp=sharing' 
                 target='_blank' rel="noreferrer"> RESUME
                 </a>
               </Button>
+              </div>
+                <div className='flex-div'>
                 <a href='https://github.com/KalaivaniBaskar' target='_blank' rel="noreferrer">
                  <Tooltip title="GitHub"> <GitHubIcon fontSize='large'/> </Tooltip>
                 </a>
@@ -141,10 +143,12 @@ const Skills = () => {
               <div className='flex-div'>
                 <Button variant='outlined' className='btn-skills' onClick={()=> navigate('/education')}>Education</Button>
                 <Button variant='outlined' className='btn-skills' >
-                <a href='https://drive.google.com/file/d/1zlgsXu79LWff7J5PagLxCfXOBss2VHo0/view?usp=sharing' 
+                <a href='https://drive.google.com/file/d/1BF4YSupL1yCjomgxtoLQ5S5Y9-92RgbL/view?usp=sharing' 
                 target='_blank' rel="noreferrer"> RESUME
                 </a>
               </Button>
+              </div>
+                <div className='flex-div'>
                 <a href='https://github.com/KalaivaniBaskar' target='_blank' rel="noreferrer">
                  <Tooltip title="GitHub"> <GitHubIcon fontSize='large'/> </Tooltip>
                 </a>
