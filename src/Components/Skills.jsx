@@ -34,7 +34,7 @@ const Skills = () => {
               <div className='flex-div'>
                 <Button variant='outlined' className='btn-skills' onClick={()=> navigate('/education')}>Education</Button>
                 <Button variant='outlined' className='btn-skills' >
-                <a href='https://drive.google.com/file/d/1BF4YSupL1yCjomgxtoLQ5S5Y9-92RgbL/view?usp=sharing' 
+                <a href='https://drive.google.com/file/d/13Ns-W97PloH5gyiolMVju4rITDEgHjlO/view' 
                 target='_blank' rel="noreferrer"> RESUME
                 </a>
               </Button>
@@ -143,7 +143,7 @@ const Skills = () => {
               <div className='flex-div'>
                 <Button variant='outlined' className='btn-skills' onClick={()=> navigate('/education')}>Education</Button>
                 <Button variant='outlined' className='btn-skills' >
-                <a href='https://drive.google.com/file/d/1BF4YSupL1yCjomgxtoLQ5S5Y9-92RgbL/view?usp=sharing' 
+                <a href='https://drive.google.com/file/d/13Ns-W97PloH5gyiolMVju4rITDEgHjlO/view' 
                 target='_blank' rel="noreferrer"> RESUME
                 </a>
               </Button>

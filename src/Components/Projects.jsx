@@ -12,6 +12,7 @@ import qr from '../assets/images/qr2.png';
 import gabby from '../assets/images/gabby.png';
 import bookish from '../assets/images/bookish.png';
 import thinnai from '../assets/images/thinnai.png';
+import sql from '../assets/images/sql.png';
 import ProjectCard from './ProjectCard';
 import { Box } from '@mui/material';
 
@@ -63,6 +64,15 @@ const Projects = () => {
       "fe": "https://github.com/KalaivaniBaskar/AWS-CRUD-Serverless",
       "be" : "https://github.com/KalaivaniBaskar/AWS-CRUD-Serverless/tree/master/aws",
       "image" : aws
+    },
+    {
+      "title" : "Student list SQL",
+      "stack" : "React.js, Node.js, Express, MySQL",
+      "func" : "A student list CRUD app using React, Nodejs, Express, MySQL",
+      "site" : "https://mysql-student.netlify.app/",
+      "fe": "https://github.com/KalaivaniBaskar/sql-crud-fe",
+      "be" : "https://github.com/KalaivaniBaskar/sql-crud-be",
+      "image" : sql
     },
     {
       "title" : "Image generator ",
